@@ -1,0 +1,42 @@
+{
+    "name": "twig/markdown-extension",
+    "type": "library",
+    "description": "A Twig extension for Markdown",
+    "keywords": ["twig", "html", "markdown"],
+    "homepage": "https://twig.symfony.com",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Fabien Potencier",
+            "email": "fabien@symfony.com",
+            "homepage": "http://fabien.potencier.org",
+            "role": "Lead Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.0",
+        "league/html-to-markdown": "^4.8",
+        "twig/twig": "^1.0 || ^2.0"
+    },
+    "require-dev": {
+        "symfony/phpunit-bridge": "^4.1.8",
+        "erusev/parsedown": "^1.7",
+        "league/commonmark": "*",
+        "michelf/php-markdown": "^1.8"
+    },
+    "autoload": {
+        "psr-4" : {
+            "Twig\\Markdown\\" : "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4" : {
+            "Twig\\Markdown\\Tests\\" : "test/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}
