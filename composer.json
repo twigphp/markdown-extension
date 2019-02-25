@@ -20,7 +20,7 @@
     "require-dev": {
         "symfony/phpunit-bridge": "^4.1.8",
         "erusev/parsedown": "^1.7",
-        "league/commonmark": "*",
+        "league/commonmark": "^0.4 || ^1.0",
         "league/html-to-markdown": "^4.8",
         "michelf/php-markdown": "^1.8"
     },
