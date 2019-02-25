@@ -100,7 +100,7 @@ EOF
 {% filter html_to_markdown %}
     <html>
         <h1>Hello</h1>
-        <p><b>Great!</b></p>
+        <p><b><span>Great!</span></b></p>
     </html>
 {% endfilter %}
 EOF
