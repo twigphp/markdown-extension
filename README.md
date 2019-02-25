@@ -1,7 +1,7 @@
 Twig Markdown Extension
 =======================
 
-This package provides a Mardown to HTML filter (`markdown`) and an HTML to
+This package provides a Markdown to HTML filter (`markdown`) and an HTML to
 Markdown filter (`html_to_markdown`) for Twig and a Symfony bundle.
 
 If you are not using Symfony, register the extension on Twig's `Environment`
