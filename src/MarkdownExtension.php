@@ -37,6 +37,7 @@ function twig_html_to_markdown(string $body, array $options = []): string
     $options = $options + [
         'hard_break' => true,
         'strip_tags' => true,
+        'remove_nodes' => 'head style',
     ];
 
     if (!isset($converters[$key = serialize($options)])) {
