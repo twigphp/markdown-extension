@@ -16,7 +16,7 @@ use Twig\RuntimeLoader\RuntimeLoaderInterface;
 class FunctionalTest extends TestCase
 {
     /**
-     * @dataProvider getMardownTests
+     * @dataProvider getMarkdownTests
      */
     public function testMarkdown(string $template, string $expected): void
     {
@@ -50,7 +50,7 @@ EOF
         }
     }
 
-    public function getMardownTests()
+    public function getMarkdownTests()
     {
         return [
             [<<<EOF
@@ -67,7 +67,7 @@ EOF
     }
 
     /**
-     * @dataProvider getHtmlToMardownTests
+     * @dataProvider getHtmlToMarkdownTests
      */
     public function testHtmlToMarkdown(string $template, string $expected): void
     {
@@ -84,7 +84,7 @@ EOF
         $this->assertEquals($expected, $twig->render('index'));
     }
 
-    public function getHtmlToMardownTests()
+    public function getHtmlToMarkdownTests()
     {
         return [
             [<<<EOF
