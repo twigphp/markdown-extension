@@ -28,7 +28,7 @@ class DefaultMarkdown implements MarkdownInterface
         } elseif (class_exists(MarkdownExtra::class)) {
             $this->converter = new MichelfMarkdown();
         } else {
-            throw new \LogicException('You cannot use the "markdown" filter as no Markdown library is available.');
+            throw new \LogicException('You cannot use the "markdown" filter as no Markdown library is available; try running "composer require erusev/parsedown.');
         }
     }
 
