@@ -32,6 +32,18 @@ Hello!
 {% endfilter %}
 ```
 
+Note that you can indent the Markdown content as leading whitespaces will be
+removed consistently before conversion:
+
+```twig
+{% filter markdown %}
+    Title
+    ======
+
+    Hello!
+{% endfilter %}
+```
+
 You can also add some options by passing them as an argument to the filter:
 
 ```twig

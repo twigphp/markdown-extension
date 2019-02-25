@@ -62,6 +62,15 @@ Great!
 {% endfilter %}
 EOF
             , "<h1>Hello</h1>\n+<p>Great!</p>"],
+            [<<<EOF
+{% filter markdown %}
+    Hello
+    =====
+
+    Great!
+{% endfilter %}
+EOF
+            , "<h1>Hello</h1>\n+<p>Great!</p>"],
             ["{{ include('html')|markdown }}", "<h1>Hello</h1>\n+<p>Great!</p>"],
         ];
     }
