@@ -15,6 +15,23 @@ $twig = new Environment(...);
 $twig->addExtension(new MarkdownExtension());
 ```
 
+You must also register the extension runtime (skip this step if you are using
+Symfony or a framework with a Twig integration):
+
+```php
+use Twig\Markdown\DefaultMarkdown;
+use Twig\Markdown\MarkdownRuntime;
+use Twig\RuntimeLoader\RuntimeLoaderInterface;
+
+$twig->addRuntimeLoader(new class implements RuntimeLoaderInterface {
+    public function load($class) {
+        if (MarkdownRuntime::class === $class) {
+            return new MarkdownRuntime(new DefaultMarkdown());
+        }
+    }
+});
+```
+
 Use the `markdown` and `html_to_markdown` filters from a Twig template:
 
 ```twig
