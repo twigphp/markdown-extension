@@ -4,6 +4,12 @@ Twig Markdown Extension
 This package provides a Markdown to HTML filter (`markdown`) and an HTML to
 Markdown filter (`html_to_markdown`) for Twig and a Symfony bundle.
 
+Install using [Composer](https://getcomposer.org/):
+
+```bash
+composer require twig/markdown-extension
+```
+
 If you are not using Symfony, register the extension on Twig's `Environment`
 manually:
 
