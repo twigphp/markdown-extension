@@ -1,6 +1,8 @@
 Twig Markdown Extension
 =======================
 
+**WARNINIG**: This package is deprecate; migrate to `twig/markdown-extra` instead.
+
 This package provides a Markdown to HTML filter (`markdown`) and an HTML to
 Markdown filter (`html_to_markdown`) for Twig and a Symfony bundle.
 
